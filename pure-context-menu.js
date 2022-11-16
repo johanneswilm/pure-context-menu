@@ -30,7 +30,7 @@ class PureContextMenu {
     this._items = items;
     this._el = el;
 
-    this._options = Object.assign(baseOptions, opts);
+    this._options = Object.assign({}, baseOptions, opts);
 
     // bind the menu
     el.oncontextmenu = this._onShowContextMenu;
